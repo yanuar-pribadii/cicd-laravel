@@ -27,9 +27,9 @@ jobs:
     - stage: "Build Docker Image"
       name: "Build Images Docker" 
       script:
-      - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+      - echo "rookierockstar" | docker login -u "yanuarpribadi" --password-stdin
       - docker build -t travis-ci-build-stages-demo .
       - docker images
-      - docker tag travis-ci-build-stages-demo $DOCKER_USERNAME/pelatihan-cicd-laravel
+      - docker tag travis-ci-build-stages-demo yanuarpribadi/cicd-laravel
       - docker push yanuarpribadi/cicd-laravel 
  
