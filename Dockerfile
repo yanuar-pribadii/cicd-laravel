@@ -1,6 +1,6 @@
 # using this awesome prebuild image:
-FROM '123majumundur/php-7.1-nginx:cicd'
-MAINTAINER Yanuar Pribadi <ajayghale236@gmail.com>
+FROM 'cicd/php-7.1-nginx:cicd'
+MAINTAINER yanuarpribadi <ajayghale236@gmail.com>
 
 # Install prestissimo for faster deps instalation 
 RUN composer global require hirak/prestissimo
